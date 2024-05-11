@@ -7,13 +7,16 @@
     "dev": "nodemon -w src/server -x tsx src/server/main.ts",
     "start": "cross-env NODE_ENV=production tsx src/server/main.ts",
     "build": "vite build",
-    "api-typegen": "npx swagger-typescript-api -p https://api.swaggerhub.com/apis/JYFCHEN57_1/pz-cheez-api/1.0.0 --no-client -o ./src/swagger -n api.ts"
+    "api-download": "curl -o ./public/api.json https://api.swaggerhub.com/apis/JYFCHEN57_1/pz-cheez-api/1.0.0",
+    "api-typegen": "npx swagger-typescript-api -p ./public/api.json ./public/api.json --no-client -o ./src/definitions -n swagger.ts",
+    "api-update": "npm run api-download && npm run api-typegen"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
     "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "swagger-ui-react": "^5.17.7",
     "tsx": "^4.3.0",
     "vite-express": "*"
   },
@@ -25,6 +28,7 @@
     "@types/node": "^20.9.3",
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.2.16",
+    "@types/swagger-ui-react": "^4.18.3",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
     "@vitejs/plugin-react": "^4.2.0",

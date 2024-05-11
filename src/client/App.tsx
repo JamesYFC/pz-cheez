@@ -1,9 +1,6 @@
 import "./App.css";
 
 import { useState } from "react";
-
-import reactLogo from "./assets/react.svg";
-import { Cheese } from "../swagger/api";
 import useApi from "./hooks/useApi";
 
 function App() {

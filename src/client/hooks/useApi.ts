@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Api } from "../../swagger/api";
 
 const useApi = (url: string) => {
     const [loading, setLoading] = useState(true);
@@ -23,12 +22,5 @@ const useApi = (url: string) => {
 
     return { loading, data }
 };
-
-const useApiNew = () => {
-    const api = new Api();
-    const [loading, setLoading] = useState(true);
-    const [data, setData] = useState(null);
-    var x = 3;
-}
 
 export default useApi;

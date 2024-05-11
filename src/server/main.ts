@@ -1,6 +1,6 @@
 import express from "express";
 import ViteExpress from "vite-express";
-import { Cheese } from "../swagger/api.js";
+import { Cheese } from "../definitions/swagger.js";
 
 const app = express();
 
