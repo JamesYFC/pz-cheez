@@ -9,7 +9,9 @@ import useApi from "./hooks/useApi";
 function App() {
   const { loading, data } = useApi("/cheeses");
 
-  if (loading) return <p>Loading...</p>
+  if (loading)
+    return <p>Loading...</p>
+
 
   return (
     <div className="App">
