@@ -10,10 +10,7 @@
  */
 
 export interface Cheese {
-  /**
-   * @format uuid
-   * @example "d290f1ee-6c54-4b01-90e6-d701748f0851"
-   */
+  /** @format uuid */
   id: string;
   /** @example "Widget Adapter" */
   name: string;
@@ -27,6 +24,9 @@ export interface Cheese {
    * @example "#ee340c"
    */
   color: string;
-  /** @format base64 */
-  image: string;
+  /**
+   * @format url
+   * @example "https://upload.wikimedia.org/wikipedia/commons/1/18/Somerset-Cheddar.jpg"
+   */
+  imageUrl?: string;
 }
