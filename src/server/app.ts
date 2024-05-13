@@ -22,7 +22,7 @@ app.get("/cheeses", (_, res) => {
     res.send(cheeses)
 });
 
-// Post a new cheese
+// Post a new cheese. With time, could add authentication for all non-public routes
 app.post("/cheeses", express.json(), (req, res) => {
     const cheese = req.body;
 
