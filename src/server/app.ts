@@ -4,6 +4,7 @@ import { Cheese } from "../definitions/swagger.js";
 import baseData from "./baseData.js";
 import { isCheeseInput } from "./utils.js";
 
+// todo use db for persistence. I really want to try mkdb!
 const cheeses: Record<string, Cheese> = baseData.reduce(
     (acc, item) => {
         const id = randomUUID();
