@@ -12,14 +12,14 @@
 export interface Cheese {
   /** @format uuid */
   id: string;
-  /** @example "Widget Adapter" */
+  /** @example "New Cheese" */
   name: string;
   /**
    * @format double
    * @example 13.95
    */
   price: number;
-  /** @example "#ee340c" */
+  /** @example "yellow" */
   color: string;
   /**
    * @format url
