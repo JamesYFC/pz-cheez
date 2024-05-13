@@ -12,15 +12,18 @@ function App() {
   if (loading)
     return <p>Loading...</p>
 
+  // todo include subtotals in a neat way (right to left next to total price?)
   return (
     <div className="App">
-      <div className="flex flex-wrap mb-4 bg-stone-100 text-stone-600">
+      <h1 className="text-3xl font-semibold mb-4">Welcome to the PZ Cheeseria</h1>
+      <div className="flex flex-wrap mb-4 text-stone-600">
         {Object.values(cheeseData).map((cheese, index) =>
           <CheeseItem
             key={index}
             cheese={cheese}
             quantity={priceQuantities[cheese.id] || 0}
-            onQuantityChange={(value) => !isNaN(value) && setPriceQuantities({
+            onQuantityChange={(value) => !isNaN(value)
+              && setPriceQuantities({
               ...priceQuantities,
               [cheese.id]: value
             })}
@@ -28,7 +31,7 @@ function App() {
       </div>
       <div className="absolute bottom-0 right-0 p-3 bg-slate-700">
         <label>Total:</label>
-        <div className="font-semibold">${Object.entries(priceQuantities)
+        <div className="font-semibold text-xl">${Object.entries(priceQuantities)
           .reduce(
             (acc, [id, quantity]) => acc + (cheeseData[id].price ?? 0) * quantity,
             0

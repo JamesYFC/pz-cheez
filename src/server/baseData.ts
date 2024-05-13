@@ -28,7 +28,7 @@ const baseData: Omit<Cheese, "id">[] = [
     {
         name: "Casu Martzu",
         price: 69.99,
-        color: "cream",
+        color: "gray",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Casu_Marzu_cheese.jpg/320px-Casu_Marzu_cheese.jpg",
     },
 ];
