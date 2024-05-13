@@ -17,7 +17,7 @@ const cheeses: Record<string, Cheese> = baseData.reduce(
 
 const app = express();
 
-// Get all cheeses
+// Get all cheeses. With time, could add pagination, filter params, etc
 app.get("/cheeses", (_, res) => {
     res.send(cheeses)
 });
