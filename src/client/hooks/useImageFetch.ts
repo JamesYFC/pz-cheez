@@ -4,6 +4,7 @@ function useImageFetch(url: string) {
     const [loading, setLoading] = useState(true);
     const [blobUrl, setBlobUrl] = useState<string | null>(null);
 
+    // todo handle errors
     const fetchImage = async () => {
         console.log("fetching image from url", url)
         const result = await fetch(url);
