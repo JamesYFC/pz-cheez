@@ -8,10 +8,8 @@ function useImageFetch(url: string) {
         console.log("fetching image from url", url)
         const result = await fetch(url);
         const blob = await result.blob();
-        console.log("downloaded blob");
         setLoading(false);
         setBlobUrl(URL.createObjectURL(blob));
-        console.log("created object url");
     };
 
     useEffect(() => {

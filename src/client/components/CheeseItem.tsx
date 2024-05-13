@@ -24,7 +24,7 @@ export const CheeseItem: React.FC<{
                     value={quantity}
                     onChange={(e) => onValueChange(e.target.valueAsNumber)}
                 />
-                x ${cheese.price} / kg
+                x ${cheese.price.toFixed(2)} / kg
                 <div className="flex items-center justify-end">
                     <div className="mr-2">= ${(cheese.price * quantity).toFixed(2)}</div>
                     <button
