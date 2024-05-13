@@ -1,3 +1,4 @@
+import { Cheese } from "../definitions/swagger.js";
 import { CheeseInput } from "../definitions/types.js";
 import { URL } from "url";
 
@@ -19,5 +20,16 @@ export function isCheeseInput(obj: any): obj is CheeseInput {
         typeof obj.color === "string" &&
         typeof obj.imageUrl === "string"
         && stringIsValidUrl(obj.imageUrl)
+    );
+}
+
+export function isCheese(object: any): object is Cheese {
+    return (
+        typeof object === "object" &&
+        typeof object.id === "string" &&
+        typeof object.name === "string" &&
+        typeof object.price === "number" &&
+        typeof object.color === "string" &&
+        typeof object.imageUrl === "string"
     );
 }

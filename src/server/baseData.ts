@@ -25,12 +25,12 @@ const baseData: Omit<Cheese, "id">[] = [
         color: "blue",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bleu_de_Gex.jpg/320px-Bleu_de_Gex.jpg",
     },
-    // {
-    //   name: "Swiss",
-    //   price: 9.99,
-    //   color: "#F4EAE4",
-    //   image: "fire.png",
-    // },
+    {
+        name: "Casu Martzu",
+        price: 69.99,
+        color: "cream",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Casu_Marzu_cheese.jpg/320px-Casu_Marzu_cheese.jpg",
+    },
 ];
 
 export default baseData;
