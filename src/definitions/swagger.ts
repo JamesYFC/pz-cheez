@@ -19,10 +19,7 @@ export interface Cheese {
    * @example 13.95
    */
   price: number;
-  /**
-   * @format hexadecimal
-   * @example "#ee340c"
-   */
+  /** @example "#ee340c" */
   color: string;
   /**
    * @format url
