@@ -2,6 +2,8 @@ import { Cheese } from "../definitions/swagger.js";
 import { CheeseInput } from "../definitions/types.js";
 import { URL } from "url";
 
+// todo can test all the functions here
+
 const stringIsValidUrl = (url: string): boolean => {
     try {
         const myURL = new URL(url);
