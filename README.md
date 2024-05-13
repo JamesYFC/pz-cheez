@@ -17,6 +17,10 @@ A cheeseria app built with [vite-express](https://github.com/szymmis/vite-expres
 3. Starting 
     - `npm dev` to start dev server, OR
     - `npm build` and `npm start` to start with production env variable, OR
-    - `docker build` and `docker run` the `Dockerfile`.
+    - Docker deploy:
+        1. `docker build . -t="pz-cheez"` to build the image
+        2. `docker run -d -p 3000:3000 --name pz-cheez-test pz-cheez` to run the container
 4. Navigate to `localhost:3000` and you should see the page.
 5. Navigate to `localhost:3000/api-doc/` to view and execute api calls through SwaggerUI.
+    - Here, you can test execute api calls directly against the local server, and see the response message.
+    - Navigate back to `localhost:3000` to see resulting changes to the front end UI.
