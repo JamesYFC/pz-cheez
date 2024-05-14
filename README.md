@@ -15,8 +15,8 @@ A cheeseria app built with [vite-express](https://github.com/szymmis/vite-expres
 1. `git clone` the app
 2. `npm i` to install dependencies
 3. Starting 
-    - `npm dev` to start dev server, OR
-    - `npm build` and `npm start` to start with production env variable, OR
+    - `npm run dev` to start dev server, OR
+    - `npm run build` and `npm start` to start with production env variable, OR
     - Docker deploy:
         1. `docker build . -t="pz-cheez"` to build the image
         2. `docker run -d -p 3000:3000 --name pz-cheez-test pz-cheez` to run the container
