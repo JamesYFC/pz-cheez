@@ -5,10 +5,10 @@ A cheeseria app built with [vite-express](https://github.com/szymmis/vite-expres
 # Commands
 
 - `npm run dev`: Runs the dev server
-- `npm build`: Builds the client as static files to serve in `./dist`
+- `npm run build`: Builds the client as static files to serve in `./dist`
 - `npm start`: Starts the server from `main.ts`
-- `test`: Runs tests
-- `api-update`: Downloads latest swagger api files and autogens ts definitions
+- `npm test`: Runs tests
+- `npm run api-update`: Downloads latest swagger api files and autogens ts definitions
 
 # Getting Started
 
